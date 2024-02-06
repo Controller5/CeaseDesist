@@ -21,7 +21,7 @@ if 'email' not in ss:
 
 
 
-st.title("Cease & Desist Letter")
+st.title("Cease & Desist Letter Maker")
 
 def sidew(n):
     st.sidebar.title(n)
