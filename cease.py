@@ -61,7 +61,7 @@ if st.session_state.platform == 'instagram':
     st.session_state.platform_tos = "https://www.facebook.com/help/instagram/477434105621119"
     st.session_state.platform_tos_args = " Instagram's \"Community Guidelines\" in particular the section entitled, \"Follow the law\" and the section entitled, \"Respect other members of the Instagram community,\" states with clarity that Instagram will \"remove content that contains credible threats or hate speech, content that targets private individuals to degrade or shame them, personal information meant to blackmail or harass someone...\""
     if st.session_state.reported is True:
-        st.session_state.reporting_text = "I reported the material in question via the protocols established in Instagram's Reporting Portal --- Reporting steps / site for Instagram, find."
+        st.session_state.reporting_text = "I reported the material in question via the protocols established in Instagram's Reporting Portal found at: \"https://help.instagram.com/contact/383679321740945\""
 if st.session_state.platform == 'twitter':
     st.session_state.platform_tos = "https://twitter.com/en/tos"
 
