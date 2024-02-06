@@ -61,7 +61,7 @@ if st.session_state.platform == 'instagram':
     st.session_state.platform_tos = "https://www.facebook.com/help/instagram/477434105621119"
     st.session_state.platform_tos_args = " Instagram's \"Community Guidelines\" in particular the section entitled, \"Follow the law\" and the section entitled, \"Respect other members of the Instagram community,\" states with clarity that Instagram will \"remove content that contains credible threats or hate speech, content that targets private individuals to degrade or shame them, personal information meant to blackmail or harass someone...\""
     if st.session_state.reported is True:
-        st.session_state.reporting_text = "I reported the material in question via the protocols established in Instagram's Reporting Portal found at: \"https://help.instagram.com/contact/383679321740945\""
+        st.session_state.reporting_text = "I have already reported the material in question via the protocols established in Instagram's Reporting Portal found at: https://help.instagram.com/contact/383679321740945."
 if st.session_state.platform == 'twitter':
     st.session_state.platform_tos = "https://twitter.com/en/tos"
 
@@ -82,7 +82,7 @@ with st.container():
             \nMy name is {name}. On {date_discovery} I discovered that I had been \"doxed,\" a recognized form of online harassment. Please find a summary of the details of the harassment herein:
             \n{describe}
             \nPublication of the doxing materials are to be found at {url} as of {date_discovery}.  {st.session_state.reporting_text}
-            \n Doxing is an English word, short for Dropping Documents, for harassment through the publishing of PII (Personally Identifying Information). Because of the interconnected nature of the internet, PII published online spreads quickly around the world and can cause irreparable harm to a doxed individual.
+            \n I respectfully demand that {st.session_state.platform_nn} cease the publication of the aforementioned harassment materials, and desist from future publication. Confirmation of compliance with this demand should be sent to {email} as soon as completed. \n Doxing is an English word, short for Dropping Documents, for harassment through the publishing of PII (Personally Identifying Information). Because of the interconnected nature of the internet, PII published online spreads quickly around the world and can cause irreparable harm to a doxed individual.
             \n This letter shall serve as notice that absent the swift removal from {st.session_state.platform_nn}'s site of the aforemention doxing material I am prepared to retain an attorney and take steps towards the resolution of this matter. The harassment published on your platform may violate federal law against stalking, and/or state law, including but not limited to, in the states of Arizona, Colorado, Florida, Kentucky, Minnesota, Oklahoma, and Oregon, each of whom have laws explicitly targeting the practice of doxing. 
             \nFurther, I am prepared to retain counsel and seek resolution under the laws of various foreign nations in which this published material is accessible, including but not limited to, France, Germany, the United Kingdom, and Canada. 
             \nThe harassment materials published at {url} fall strictly within the language regarding prohibited postings found at {st.session_state.platform_nn}'s Terms of Service found at {st.session_state.platform_tos} {st.session_state.platform_tos_args}
