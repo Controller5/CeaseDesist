@@ -93,9 +93,9 @@ with st.container():
         """
         st.success("Letter Generated")
 
-    if st.button("Copy to Clipboard", key="copy"):
-        pyperclip.copy(st.session_state.letter)
-        st.success("Copied to Clipboard")
+    # if st.button("Copy to Clipboard", key="copy"):
+    #     pyperclip.copy(st.session_state.letter)
+    #     st.success("Copied to Clipboard")
 
     if st.download_button("Download Letter",
         st.session_state.letter,
