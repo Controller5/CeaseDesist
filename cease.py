@@ -58,9 +58,11 @@ if service1 == "Other":
 if service1 == 'Instagram':
     st.session_state.platform = 'instagram'
     ss.platform_nn = "Instagram"
+    ss.platform_legal = "Legal Department of Instagram"
 if service1 == 'X/Twitter':
     st.session_state.platform = "twitter"
     st.session_state.platform_nn = "X/Twitter"
+    ss.platform_legal = "Legal Department of X/Twitter"
 
 
 if st.session_state.platform == 'instagram':
@@ -84,7 +86,7 @@ today_date = st.date_input("Today's date", key="today", label_visibility="visibl
 with st.container():
 
     if st.button("Generate Letter", key="generate"):
-        st.session_state.letter = f"""Dear {st.session_state.platform_nn},
+        st.session_state.letter = f"""Dear {st.session_state.platform_legal},
             \nMy name is {name}. On {date_discovery} I discovered that I had been \"doxed,\" a recognized form of online harassment. Please find a summary of the details of the harassment herein:
             \n{describe}
             \nPublication of the doxing materials are to be found at {url} as of {date_discovery}.  {st.session_state.reporting_text}
