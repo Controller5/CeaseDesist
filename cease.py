@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit import session_state as ss
 import pyperclip
 
-st.set_page_config(page_title="Cease and Desist", page_icon=":stop:")
+st.set_page_config(page_title="Cease and Desist", page_icon=":zipper_mouth_face:")
 
 if "letter" not in st.session_state:
     st.session_state.letter = ""
