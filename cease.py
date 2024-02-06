@@ -10,6 +10,8 @@ if 'platform_tos' not in st.session_state:
     st.session_state.platform_tos = ""
 if 'platform' not in st.session_state:
     st.session_state.platform = ""
+if 'platform_legal' not in ss:
+    ss.platform_legal = ""
 if 'st.session_state.platform_tos_args' not in st.session_state:
     st.session_state.platform_tos_args = ""
 if 'reporting_text' not in st.session_state:
