@@ -38,20 +38,24 @@ def sidew(n):
 st.sidebar.title("Guide to finding the right place to send your letter.")
 sidew("Instagram")
 sidew("X/Twitter")
-sidew("Meta/Facebook")
 
 with st.sidebar.container():
-    st.sidebar.write("""_Email:_
-                \nlegal@facebook.com 
-                \n _Send a paper version to:_
-                \n Facebook 
-                \n Attn: Legal Department 
-                \n 156 University Ave 
-                \n Palo Alto, CA \n 94301 """)
-
-sidew("Google")
-sidew("Youtube")
-sidew("Reddit")
+    sidew("""Meta/Facebook
+        \n legal@facebook.com 
+        \n ---
+        \n Facebook 
+        \n Attn: Legal Department 
+        \n 156 University Ave 
+        \n Palo Alto, CA \n 94301 """)
+    st.sidebar.divider()
+    sidew("""Google
+          \n Google LLC 
+          \n c/o Custodian of Records
+          \n 1600 Amphitheatre Parkway
+          \n Mountain View, California 94043
+          \n United States of America""")
+    sidew("Youtube")
+    sidew("Reddit")
 
 
 name = st.text_input("Your name", key="name")
