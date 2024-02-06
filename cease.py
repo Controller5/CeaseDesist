@@ -57,6 +57,7 @@ if service1 == "Other":
     st.session_state.platform = service2
 if service1 == 'Instagram':
     st.session_state.platform = 'instagram'
+    ss.platform_nn = "Instagram"
 if service1 == 'X/Twitter':
     st.session_state.platform = "twitter"
     st.session_state.platform_nn = "X/Twitter"
