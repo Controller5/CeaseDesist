@@ -25,7 +25,7 @@ if 'email' not in ss:
 st.title("""
 :red[Disclaimer: Any use of the following form letter should not be taken as legal advice. 
 \n This tool provides an example of a cease and desist letter with exchangeable variables, nothing more.
-\n The User of this tool assumes any and all liability that may result from its use. 
+\n The User of this tool assumes any and all liability that may result from its use.] 
 """)
 
 
